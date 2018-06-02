@@ -1,0 +1,12 @@
+{ "open": { "database": "student", "login": "init", "password": "qwerty"}}
+{ "root": { "secret": "qwerty", "newpassword": "1_pass", "data": "jestem szefem", "emp" : 1}}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"2_pass", "emp1":"1", "emp":"2" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 3", "newpasswd":"3_pass", "emp1":"1", "emp":"3" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 4", "newpasswd":"4_pass", "emp1":"3", "emp":"4" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 5", "newpasswd":"5_pass", "emp1":"3", "emp":"5" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 6", "newpasswd":"6_pass", "emp1":"5", "emp":"6" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"", "emp1":"", "emp":"" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"", "emp1":"", "emp":"" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"", "emp1":"", "emp":"" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"", "emp1":"", "emp":"" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"", "emp1":"", "emp":"" }}
