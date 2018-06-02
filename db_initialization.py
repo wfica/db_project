@@ -4,6 +4,8 @@ import sys
 from consts_and_utils import (fail, INIT, APP, PASSWD)
 
 def connect(authData):
+    """Returns connection to the database."""
+
     conn = psycopg2.connect(
         dbname=authData['database'],
         host='localhost',
@@ -13,6 +15,9 @@ def connect(authData):
 
 
 def initialize_db(authData):
+    """Creates TABLE employee and ROLE app.
+    Grants SELECT, DELETE, UPDATE, INSERT ON employee TO app."""
+
     conn = connect(authData)
     cur = conn.cursor()
     cur.execute(
@@ -43,6 +48,9 @@ def initialize_db(authData):
 
 
 def handle_first_line():
+    """Handles first line of an input - returns connection to the db.
+    If it's init then db will be initialized."""
+
     jsonObj = json.loads(sys.stdin.readline())
     try:
         if jsonObj['open']['login'] == INIT:
@@ -51,6 +59,6 @@ def handle_first_line():
             conn = connect(jsonObj['open'])
         conn.commit()
         print('{ "status": "OK" }')
-        return conn
+        return conn, jsonObj['open']['login']
     except:
         fail()
