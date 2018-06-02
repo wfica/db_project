@@ -5,3 +5,5 @@
 { "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 4", "newpasswd":"4_pass", "emp1":"3", "emp":"4" }}
 { "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 5", "newpasswd":"5_pass", "emp1":"3", "emp":"5" }}
 { "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 6", "newpasswd":"6_pass", "emp1":"5", "emp":"6" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 7", "newpasswd":"7_pass", "emp1":"2", "emp":"7" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 8", "newpasswd":"8_pass", "emp1":"7", "emp":"8" }}

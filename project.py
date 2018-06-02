@@ -1,12 +1,8 @@
-#!/usr/bin/python2.4
-#
-# Small script to show PostgreSQL and Pyscopg together
-#
 import json
 import psycopg2
 import sys
 import functions_handling as fh
-from consts_and_utils import (fail)
+from consts_and_utils import (fail, DEBUG)
 from db_initialization import (handle_first_line)
 
 
@@ -22,13 +18,18 @@ def handle_line(line, conn):
 
 def main():
     conn = handle_first_line()
+    if len(sys.argv) == 1:
+        tree = fh.preOrder_postOrder_mapping(conn)
+        print(tree)
     for line in sys.stdin.readlines():
         try:
             handle_line(line, conn)
         except Exception as e:
-            print(e)
+            if DEBUG: 
+                print(e)
             fail()
-
+        finally:
+            conn.commit()
 
 if __name__ == '__main__':
     main()

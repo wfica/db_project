@@ -5,8 +5,9 @@
 { "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 4", "newpasswd":"4_pass", "emp1":"3", "emp":"4" }}
 { "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 5", "newpasswd":"5_pass", "emp1":"3", "emp":"5" }}
 { "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 6", "newpasswd":"6_pass", "emp1":"5", "emp":"6" }}
-{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"", "emp1":"", "emp":"" }}
-{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"", "emp1":"", "emp":"" }}
-{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"", "emp1":"", "emp":"" }}
-{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"", "emp1":"", "emp":"" }}
-{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"", "emp1":"", "emp":"" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"fail_pass", "emp1":"0", "emp":"7" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"fail_pass", "emp1":"5", "emp":"2" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"fail_pass", "emp1":"8", "emp":"7" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"fail_pass", "emp1":"1", "emp":"1" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 2", "newpasswd":"fail_pass", "emp1":"1", "emp":"2" }}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 7", "newpasswd":"6_pass", "emp1":"4", "emp":"7" }}

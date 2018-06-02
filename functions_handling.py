@@ -40,3 +40,27 @@ def handle_new(args, conn, dfsTree=None):
     conn.commit()
     cur.close()
     print('{ "status": "OK" }')
+
+def dfs(supervisor_id, conn, tree, time):
+    tree[supervisor_id] = (time, None)
+    time += 1
+    cur = conn.cursor()
+    cur.execute(
+    """SELECT id FROM employee WHERE supervisor_id = %s""", (supervisor_id,))
+    for id in cur:
+        tree, time = dfs(id[0], conn, tree, time )
+    (in_time, _) = tree.pop(supervisor_id)
+    tree[supervisor_id] = (in_time, time)
+    time += 1
+    return tree, time 
+
+def preOrder_postOrder_mapping(conn):
+    cur = conn.cursor()
+    cur.execute(
+    """SELECT id FROM employee WHERE supervisor_id IS NULL;""")
+    boss_id = cur.fetchone()
+    in_out_times, _ = dfs(boss_id, conn, {}, 1)
+    return in_out_times
+
+
+    

@@ -35,7 +35,7 @@ def initialize_db(authData):
 
     cur.execute(
     """GRANT SELECT, DELETE, UPDATE, INSERT ON employee TO app ;""", (APP,))
-    # Psycopg adds quotes around app if %s is used insted of literal ??!!!
+    # Psycopg adds quotes around app when %s is used insted of literal ??!!!
     # print(cur.mogrify("""GRANT SELECT ON employee TO %s;""", (APP,)))
 
     cur.close()
