@@ -1,1 +1,25 @@
 { "open": { "database": "student", "login": "app", "password": "qwerty"}}
+{"update" : {"admin": 1, "passwd": "1_pass", "emp": 1, "newdata":"uuu"}}
+{ "remove" : {"admin": 1, "passwd": "1_pass", "emp": 3}}
+{ "new": {"admin":"1", "passwd":"1_pass", "data":"jestem 3", "newpasswd":"3_pass", "emp1":"1", "emp":"3" }}
+{ "new": {"admin":"3", "passwd":"3_pass", "data":"jestem 4", "newpasswd":"4_pass", "emp1":"3", "emp":"4" }}
+{ "new": {"admin":"3", "passwd":"3_pass", "data":"jestem 5", "newpasswd":"5_pass", "emp1":"3", "emp":"5" }}
+{ "new": {"admin":"3", "passwd":"3_pass", "data":"jestem 6", "newpasswd":"6_pass", "emp1":"5", "emp":"6" }}
+{ "child" : {"admin": 1, "passwd": "1_pass", "emp": 3}}
+{ "child" : {"admin": 3, "passwd": "3_pass", "emp": 7}}
+{"parent" : {"admin": 42, "passwd": "42_pass", "emp": 2}}
+{"parent" : {"admin": 1, "passwd": "1_pass", "emp": 1}}
+{"parent" : {"admin": 3, "passwd": "3_pass", "emp": 3}}
+{"ancestors" : {"admin": 3, "passwd": "3_pass", "emp": 3}}
+{"ancestors" : {"admin": 3, "passwd": "3_pass", "emp": 6}}
+{"descendants" : {"admin": 3, "passwd": "3_pass", "emp": 1}}
+{"descendants" : {"admin": 3, "passwd": "3_pass", "emp": 6}}
+{"ancestor" : {"admin": 3, "passwd": "3_pass", "emp1": 3, "emp2":6}}
+{"ancestor" : {"admin": 3, "passwd": "3_pass", "emp1": 6, "emp2":3}}
+{"read" : {"admin": 3, "passwd": "3_pass", "emp": 1}}
+{"read" : {"admin": 3, "passwd": "3_pass", "emp": 4}}
+{"read" : {"admin": 1, "passwd": "1_pass", "emp": 1}}
+{"update" : {"admin": 1, "passwd": "1_pass", "emp": 1, "newdata":"jestem boss"}}
+{"read" : {"admin": 1, "passwd": "1_pass", "emp": 1}}
+
+
