@@ -1,4 +1,4 @@
-#Project for data bases university course.
+# Project for data bases university course.
 
 It manages an artificial company's human resources.
 
