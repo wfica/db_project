@@ -48,9 +48,10 @@ def handle_line(line, cur, dfsTimes):
 def main():
     conn, user = handle_first_line()
     cur = conn.cursor()
+    dfsTimes = None
     if user != 'init':
         dfsTimes = preOrder_postOrder_mapping(conn)
-        print(dfsTimes)
+        # print(dfsTimes)
     for line in sys.stdin.readlines():
         try:
             handle_line(line, cur, dfsTimes)

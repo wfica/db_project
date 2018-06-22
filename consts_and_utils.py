@@ -4,7 +4,7 @@ INIT = 'init'
 APP = 'app'
 PASSWD = 'qwerty'
 SECRET = 'qwerty'
-DEBUG = True
+DEBUG = False
 
 def fail():
     print('{ "status": "ERROR" }')
